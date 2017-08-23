@@ -37,7 +37,7 @@ To be or not to be
 
 The co-occurrence networks (directed and undirected) obtained from the text sample for a window size of 1 are:
 
-![Co-occurrence network](co-occurrence.png =300x)
+<img src="co-occurrence.png" width="300">
 
 The PAJEK files will be:
 
