@@ -37,12 +37,12 @@ To be or not to be
 
 The co-occurrence networks (directed and undirected) obtained from the text sample for a window size of 1 are:
 
-<img src="co-occurrence.png" width="300">
+<img src="co-occurrence.png" width="500">
 
 The PAJEK files will be:
 
 In addition, the co-occurrence networks (directed and undirected) obtained from the text sample for a window size of 2 are:
 
-![Co-occurrence network](extended-co-occurrence.png?raw=true "Co-occurrence networks for the sentence 'To be or not to be' for a window size of 2")
+<img src="extended-co-occurrence.png" width="500">
 
 The PAJEK files will be:
