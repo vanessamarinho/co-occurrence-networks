@@ -5,7 +5,7 @@ Code that creates a co-occurrence network (the nodes represent the words and the
 
 ## Requirements
 
-igraph installed - http://igraph.org/python/
+igraph - http://igraph.org/python/  
 Python 3
 
 ## Usage
@@ -79,4 +79,38 @@ In addition, the co-occurrence networks (directed and undirected) obtained from 
 
 <img src="extended-co-occurrence.png" width="500">
 
-The PAJEK files will be:
+The directed PAJEK file of the above co-occorrence network (window size of 2) will be:
+
+```
+*Vertices 4
+1 "to"
+2 "be"
+3 "or"
+4 "not"
+*Arcs
+1 2
+2 3
+1 3
+3 4
+2 4
+4 1
+3 1
+4 2
+```
+
+The undirected PAJEK file of the above co-occorrence network (window size of 2) will be:
+
+```
+*Vertices 4
+1 "to"
+2 "be"
+3 "or"
+4 "not"
+*Edges
+1 2
+2 3
+1 3
+3 4
+2 4
+1 4
+```
