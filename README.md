@@ -3,6 +3,11 @@ co-occurrence-networks v1.0
 
 Code that creates a co-occurrence network (the nodes represent the words and the edges connect adjacent words) from a pre-processed text file (according to one's needs). The network is stored in a PAJEK file format.
 
+## Requirements
+
+igraph installed - http://igraph.org/python/
+Python 3
+
 ## Usage
 
 It creates a co-occurrence network from a pre-processed (according to one's needs) text file, input.txt. The network is stored in a PAJEK format file, output.paj.
@@ -31,7 +36,7 @@ Input:
 Given the following text sample:
 
 ```
-To be or not to be
+to be or not to be
 
 ```
 
@@ -39,7 +44,36 @@ The co-occurrence networks (directed and undirected) obtained from the text samp
 
 <img src="co-occurrence.png" width="500">
 
-The PAJEK files will be:
+The directed PAJEK file of the above co-occurrence network will be:
+
+```
+*Vertices 4
+1 "to"
+2 "be"
+3 "or"
+4 "not"
+*Arcs
+1 2
+2 3
+3 4
+4 1
+
+```
+
+The undirected PAJEK file of the above co-occurrence network will be:
+
+```
+*Vertices 4
+1 "to"
+2 "be"
+3 "or"
+4 "not"
+*Edges
+1 2
+2 3
+3 4
+1 4
+```
 
 In addition, the co-occurrence networks (directed and undirected) obtained from the text sample for a window size of 2 are:
 
