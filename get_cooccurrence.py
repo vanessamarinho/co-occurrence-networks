@@ -1,5 +1,4 @@
 import sys
-import igraph
 from igraph import *
 
 def create_co_occurrence(words, is_directed, window_size, output_file):
