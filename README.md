@@ -1,7 +1,7 @@
 # Co-occurrence Networks
 co-occurrence-networks v1.0
 
-Code that creates a co-occurrence network (the nodes represent the words and the edges connect adjacent words) from a pre-processed text file (according to one's needs). The network is stored in a PAJEK file format.
+Code that creates a co-occurrence network (the nodes represent the words and the edges (or arcs) connect adjacent words) from a pre-processed text file (according to one's needs). The network is stored in a PAJEK file format.
 
 ## Requirements
 
